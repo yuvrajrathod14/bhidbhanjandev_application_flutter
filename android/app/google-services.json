@@ -1,0 +1,39 @@
+{
+    "project_info": {
+        "project_number": "726229949996",
+        "project_id": "bhidbhanjan-sakariya",
+        "storage_bucket": "bhidbhanjan-sakariya.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:726229949996:android:af976567ca8aff2a71bb89",
+                "android_client_info": {
+                    "package_name": "com.bhidbhanjan.temple.bhidbhanjan_app"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "726229949996-1m6tt3vo35jfpgoa2pqnkdam32bdp09n.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyCBg2O6Wq6sd4eSpS2nQE7k673Lm9t_wI0"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "726229949996-1m6tt3vo35jfpgoa2pqnkdam32bdp09n.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

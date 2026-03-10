@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temple App Register Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5993d", // Saffron
+                        "background-light": "#fffaf0", // Cream
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .mandala-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0C50 27.6142 27.6142 50 0 50C27.6142 50 50 72.3858 50 100C50 72.3858 72.3858 50 100 50C72.3858 50 50 27.6142 50 0Z' fill='%23f5993d' fill-opacity='0.05'/%3E%3C/svg%3E");
+            background-size: 150px 150px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex justify-center">
+<div class="relative flex h-auto min-h-screen w-full max-w-[480px] flex-col overflow-x-hidden mandala-bg">
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm z-10">
+<div class="flex size-12 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-xl font-bold leading-tight flex-1 text-center pr-12 text-primary">Register</h2>
+</div>
+<div class="flex p-4 @container mt-4">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center relative cursor-pointer group">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-primary/20 bg-primary/10 flex items-center justify-center transition-transform group-hover:scale-105" data-alt="Profile photo placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqL9P_V_4_yi-yMmM7GF1ALOy56NJeLmtDIu41zdCgPx_RuF4teRDzZnvyuol6ONvApT0k4kxyN0uwmtzbdg7oDG8V5iecHZRsv-obWVSer0UOhO9jHAJr_NQexrA_JAtSfJYK_455FL69SEtQfobOS-lVVcl5WPa7Liy57LGQshNh-k7QQd_x1ApFutLaoKKRbFyWZlJp5JBEOw_3N0m1Vst8sSZkMg-oUaBbdTTSsdWczbVP9GnpZv_kY65AWdl2gOYRKBJIOqA');">
+<span class="material-symbols-outlined text-4xl text-primary drop-shadow-md">photo_camera</span>
+</div>
+<p class="text-lg font-semibold leading-tight text-center">Upload Photo</p>
+</div>
+</div>
+</div>
+<form class="flex flex-col gap-4 px-4 py-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-base font-medium leading-normal pb-1 pl-1">Name</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl shadow-sm">
+<div class="flex border border-primary/30 bg-white dark:bg-slate-800 items-center justify-center pl-[15px] pr-2 rounded-l-xl border-r-0 text-primary/70">
+<span class="material-symbols-outlined text-xl">person</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/30 bg-white dark:bg-slate-800 border-l-0 h-14 placeholder:text-slate-400 p-[15px] pl-2 text-base font-normal leading-normal" placeholder="Enter your full name" required="" type="text"/>
+</div>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-base font-medium leading-normal pb-1 pl-1">Email</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl shadow-sm">
+<div class="flex border border-primary/30 bg-white dark:bg-slate-800 items-center justify-center pl-[15px] pr-2 rounded-l-xl border-r-0 text-primary/70">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/30 bg-white dark:bg-slate-800 border-l-0 h-14 placeholder:text-slate-400 p-[15px] pl-2 text-base font-normal leading-normal" placeholder="Enter your email" required="" type="email"/>
+</div>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-base font-medium leading-normal pb-1 pl-1">Phone</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl shadow-sm">
+<div class="flex border border-primary/30 bg-white dark:bg-slate-800 items-center justify-center pl-[15px] pr-2 rounded-l-xl border-r-0 text-primary/70">
+<span class="material-symbols-outlined text-xl">call</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/30 bg-white dark:bg-slate-800 border-l-0 h-14 placeholder:text-slate-400 p-[15px] pl-2 text-base font-normal leading-normal" placeholder="Enter your phone number" required="" type="tel"/>
+</div>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-base font-medium leading-normal pb-1 pl-1">Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl shadow-sm">
+<div class="flex border border-primary/30 bg-white dark:bg-slate-800 items-center justify-center pl-[15px] pr-2 rounded-l-xl border-r-0 text-primary/70">
+<span class="material-symbols-outlined text-xl">lock</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/30 bg-white dark:bg-slate-800 border-l-0 h-14 placeholder:text-slate-400 p-[15px] pl-2 text-base font-normal leading-normal pr-10" placeholder="Create a strong password" required="" type="password"/>
+<div class="absolute right-8 top-[63%] -translate-y-1/2 flex items-center justify-center text-slate-400 cursor-pointer hover:text-primary">
+<span class="material-symbols-outlined text-xl">visibility_off</span>
+</div>
+</div>
+<div class="w-full h-1 bg-slate-200 dark:bg-slate-700 rounded-full mt-2 overflow-hidden flex">
+<div class="h-full bg-red-400 w-1/4"></div>
+<div class="h-full bg-yellow-400 w-0"></div>
+<div class="h-full bg-green-500 w-0"></div>
+</div>
+<p class="text-xs text-slate-500 mt-1 pl-1">Password strength: Weak</p>
+</label>
+<label class="flex flex-col min-w-40 flex-1 mt-2">
+<p class="text-base font-medium leading-normal pb-1 pl-1">Confirm Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl shadow-sm">
+<div class="flex border border-primary/30 bg-white dark:bg-slate-800 items-center justify-center pl-[15px] pr-2 rounded-l-xl border-r-0 text-primary/70">
+<span class="material-symbols-outlined text-xl">lock_reset</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/30 bg-white dark:bg-slate-800 border-l-0 h-14 placeholder:text-slate-400 p-[15px] pl-2 text-base font-normal leading-normal" placeholder="Confirm your password" required="" type="password"/>
+</div>
+</label>
+<div class="flex items-center gap-3 mt-4 mb-2">
+<input class="h-5 w-5 rounded border-primary/30 text-primary focus:ring-primary bg-white dark:bg-slate-800 cursor-pointer" id="terms" type="checkbox"/>
+<label class="text-sm font-medium cursor-pointer" for="terms">I agree to the <a class="text-primary hover:underline" href="#">Terms &amp; Conditions</a></label>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-md transition-colors mt-2 text-lg uppercase tracking-wide" type="submit">
+            Sign Up
+        </button>
+</form>
+<div class="mt-auto pb-8 pt-4 text-center">
+<p class="text-base">Already have an account? <a class="text-primary font-bold hover:underline" href="#">Login</a></p>
+</div>
+</div>
+</body></html>

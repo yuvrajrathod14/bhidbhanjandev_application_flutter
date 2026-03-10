@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temple App Home Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5993d",
+                        "background-light": "#fcfaf8",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-md mx-auto shadow-2xl bg-white dark:bg-[#1a130c]">
+<!-- Top App Bar (Sticky) -->
+<div class="sticky top-0 z-50 flex flex-col bg-white/95 dark:bg-[#1a130c]/95 backdrop-blur-md shadow-sm border-b border-primary/10">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-primary/20" data-alt="Temple Logo Om Symbol" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKMDROpt9tTkz8usorktsCa3yjLH8l1M2P2wEBc4N1wmyPVkMlBO5DerBLsxnF79P0VeoThIU8-9sVGA5wpwRD9yPUUch98wF-NGOXygFtwf26i9Zbrr_2rvCq_i87xwjO_2X4_zTNbeCqwr2qa5QUJCjeNbObi68cjMnEqeFnpG-UzFc5fjlr4JM9TQGv97O8jKlbnWLR5TLURIqYoV5PcV9pE_fcGD49jIglcosc_VfaUxL5SIgXb37k04c5CfCN18mqWlL_VG4");'></div>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight flex-1 ml-3 text-primary">Jai Shree Hanuman</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+<div class="px-4 pb-3">
+<label class="flex flex-col h-11 w-full relative">
+<div class="flex w-full flex-1 items-stretch rounded-full bg-slate-100 dark:bg-slate-800 border border-transparent focus-within:border-primary/50 transition-colors">
+<div class="text-slate-500 dark:text-slate-400 flex items-center justify-center pl-4 pr-2">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full flex-1 bg-transparent text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-0 border-none h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 text-sm font-medium rounded-r-full pr-4" placeholder="Search aarti, events..." value=""/>
+</div>
+</label>
+</div>
+</div>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto pb-8">
+<!-- Hero Banner -->
+<div class="p-4">
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl pt-[160px] shadow-lg relative overflow-hidden group" data-alt="Hanuman Idol Decorated with Marigolds" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHyytfTpyl_YP3bcT5m60_mnap_B3laug5VNyr0ium12uDcNQjlIo_DiHWiegLK_cMxKjufEsELT4JfrkJfnv4oUGsBxdCSsarPxhHdAwRUbq6XG2WCKkDY7_b_BCJp8dqOVovsiAFy-4NZAosHKJi6StjOCZXQ4WS7JK0CsDVWofuUIJkl9Oc_FrQmuhDeolRSWETqhFQgIUMZmJNXQWw_7NkYJtJIeMdH_uhUlnmSBGq7zTc6APm_lfLq7oEiXzsLkuQlun5X3A");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<!-- Live Badge -->
+<div class="absolute top-4 left-4 bg-red-500/90 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 backdrop-blur-sm border border-red-400/50 shadow-[0_0_10px_rgba(239,68,68,0.5)]">
+<span class="block size-2 rounded-full bg-white animate-pulse"></span>
+                    LIVE DARSHAN
+                </div>
+<div class="relative z-10 flex w-full items-end justify-between gap-4 p-5">
+<div class="flex flex-col gap-1.5 w-full">
+<h1 class="text-white text-3xl font-bold leading-tight drop-shadow-md">जय श्री हनुमान</h1>
+<div class="flex items-center gap-2 text-white/90 text-sm font-medium bg-black/30 w-fit px-2 py-1 rounded-md backdrop-blur-sm">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span id="currentDate">Tue, Oct 24, 2023</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Temple Status Card -->
+<div class="px-4 mb-4">
+<div class="flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-slate-800 p-4 shadow-md border border-slate-100 dark:border-slate-700">
+<div class="flex flex-col gap-1 flex-1">
+<div class="flex items-center gap-2">
+<span class="block size-3 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+<p class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight">Temple is Open</p>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+                        Next Aarti: Rajbhog in <strong class="text-primary font-bold ml-1">2h 15m</strong>
+</p>
+</div>
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center shrink-0 border border-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">temple_hindu</span>
+</div>
+</div>
+</div>
+<!-- Quick Actions Grid -->
+<div class="grid grid-cols-2 gap-3 px-4 mb-6">
+<div class="flex flex-col gap-2 rounded-xl bg-orange-50 dark:bg-orange-900/20 p-4 items-center justify-center shadow-sm border border-orange-100 dark:border-orange-800/50 cursor-pointer hover:shadow-md transition-shadow active:scale-95">
+<div class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-800 flex items-center justify-center mb-1 text-orange-600 dark:text-orange-300">
+<span class="material-symbols-outlined text-2xl">nest_clock_farsight_digital</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold text-center">Aarti Timings</h2>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-blue-50 dark:bg-blue-900/20 p-4 items-center justify-center shadow-sm border border-blue-100 dark:border-blue-800/50 cursor-pointer hover:shadow-md transition-shadow active:scale-95">
+<div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-800 flex items-center justify-center mb-1 text-blue-600 dark:text-blue-300">
+<span class="material-symbols-outlined text-2xl">event_upcoming</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold text-center">Events</h2>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-purple-50 dark:bg-purple-900/20 p-4 items-center justify-center shadow-sm border border-purple-100 dark:border-purple-800/50 cursor-pointer hover:shadow-md transition-shadow active:scale-95">
+<div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-800 flex items-center justify-center mb-1 text-purple-600 dark:text-purple-300">
+<span class="material-symbols-outlined text-2xl">photo_library</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold text-center">Gallery</h2>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-rose-50 dark:bg-rose-900/20 p-4 items-center justify-center shadow-sm border border-rose-100 dark:border-rose-800/50 cursor-pointer hover:shadow-md transition-shadow active:scale-95">
+<div class="w-12 h-12 rounded-full bg-rose-100 dark:bg-rose-800 flex items-center justify-center mb-1 text-rose-600 dark:text-rose-300">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold text-center">Donate</h2>
+</div>
+</div>
+<!-- Today's Schedule Widget -->
+<div class="px-4 mb-6">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Today's Schedule</h3>
+<a class="text-primary text-sm font-bold hover:underline" href="#">View All</a>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden divide-y divide-slate-100 dark:divide-slate-700">
+<div class="flex items-center p-3 opacity-50 bg-slate-50 dark:bg-slate-800/50">
+<div class="w-10 text-center mr-3">
+<span class="material-symbols-outlined text-slate-500">wb_twilight</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">Mangla Aarti</p>
+<p class="text-slate-500 text-xs">Morning Darshan</p>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">5:30 AM</p>
+<p class="text-xs text-slate-500 font-medium">Completed</p>
+</div>
+</div>
+<div class="flex items-center p-3 opacity-50 bg-slate-50 dark:bg-slate-800/50">
+<div class="w-10 text-center mr-3">
+<span class="material-symbols-outlined text-slate-500">sunny</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">Shringar Aarti</p>
+<p class="text-slate-500 text-xs">Deity Adornment</p>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">8:00 AM</p>
+<p class="text-xs text-slate-500 font-medium">Completed</p>
+</div>
+</div>
+<div class="flex items-center p-3 relative bg-primary/5 dark:bg-primary/10">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="w-10 text-center mr-3">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm text-primary">Rajbhog Aarti</p>
+<p class="text-slate-600 dark:text-slate-400 text-xs">Mid-day Offering</p>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">12:00 PM</p>
+<p class="text-xs text-primary font-bold animate-pulse">Up Next</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Events Carousel -->
+<div class="mb-6">
+<div class="flex items-center justify-between px-4 mb-3">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Upcoming Events</h3>
+<div class="flex gap-2">
+<button class="w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300"><span class="material-symbols-outlined text-[16px]">chevron_left</span></button>
+<button class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 pb-4 snap-x snap-mandatory scrollbar-hide">
+<div class="shrink-0 w-[240px] snap-center rounded-xl overflow-hidden shadow-md bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<div class="h-32 bg-cover bg-center" data-alt="Diwali Festival Celebration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGKcipHaQIlyU71fStjSPPWH7lm4fNDXH5ogmbGxpsckVmntQy9KxYmG4VB-xnnoXcfMLbA22uld35HhrGK-10I8f4hhY4hS037wh0V3ehVsG0JEUQFBL48xiBKaRavitdcVs_V1c7-WwQoALEq6GkiS3guqpmqXI8pSfrRk2061up_5POZymOnfqgsOLctCKlqm1neZiW2x29tTJ3YOElCz4dKmJtgsUWYDBps7AI821_IrNvlZHtW7xkvsNRIhFgb2wUfbV0gTo");'></div>
+<div class="p-3">
+<p class="text-primary text-xs font-bold mb-1 uppercase tracking-wider">Oct 28 • 6:00 PM</p>
+<h4 class="text-sm font-bold text-slate-900 dark:text-slate-100 line-clamp-1 mb-1">Sharad Purnima Utsav</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-2">Special bhajan sandhya and mahaprasad distribution in the main hall.</p>
+</div>
+</div>
+<div class="shrink-0 w-[240px] snap-center rounded-xl overflow-hidden shadow-md bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<div class="h-32 bg-cover bg-center" data-alt="Sundarkand Path Event" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbmmW6MRVXMLlG4krI4emv49CG7OKTXgbeYm5djGfBLAk4FaFhZuaqDJgUPUTJWLzPo-aaoj7vABWB0FUxgBmqI2Pna-WzFSavKb2-I1Zclz1Xb0LYTPQe6wVSqYPfAzbN83lLXPVUfacB2aWrW-_Je08XC14Tz3T8zGDruq_g3LsaWSjLMC6p9Mls3Xh7jYmWY6fllFxuFFYzDCPdeCrQGJ0ek5BPqArNOj38K72J8-RiC0Ko93vOGuDVDrAZAvWxfy-r3AYxejk");'></div>
+<div class="p-3">
+<p class="text-primary text-xs font-bold mb-1 uppercase tracking-wider">Every Tuesday</p>
+<h4 class="text-sm font-bold text-slate-900 dark:text-slate-100 line-clamp-1 mb-1">Sundarkand Path</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-2">Join the weekly collective chanting of Sundarkand.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Info Card -->
+<div class="px-4 mb-8">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 p-4 relative overflow-hidden">
+<!-- Abstract corner decoration -->
+<div class="absolute -right-6 -bottom-6 opacity-10 text-primary pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">location_on</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-3 relative z-10">Temple Info</h3>
+<div class="flex items-start gap-3 mb-4 relative z-10">
+<div class="mt-0.5 text-primary">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">123 Bhakti Marg, Spiritual District</p>
+<p class="text-xs text-slate-500">New Delhi, 110001, India</p>
+</div>
+</div>
+<div class="flex items-center gap-3 mb-5 relative z-10">
+<div class="text-primary">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<a class="text-sm font-bold text-slate-900 dark:text-slate-100 hover:text-primary transition-colors" href="tel:+919876543210">+91 98765 43210</a>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors relative z-10 shadow-md shadow-primary/20 active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+                    Get Directions
+                </button>
+</div>
+</div>
+</div>
+</div>
+<style>
+    /* Utility to hide scrollbar for horizontal carousels but keep functionality */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+</body></html>

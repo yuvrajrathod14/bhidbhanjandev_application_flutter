@@ -13,7 +13,7 @@
 ## Phases
 
 ### Phase 1: Project Foundation & Auth
-**Status**: ⬜ Not Started
+**Status**: ✅ Completed
 **Objective**: Setup project architecture, core theme (Saffron/Cream), and authentication flows.
 **Deliverables**:
 - Flutter project initialization with Firebase.
@@ -22,7 +22,7 @@
 - Basic Navigation Bar & Drawer.
 
 ### Phase 2: Core Temple Info & Timings
-**Status**: ⬜ Not Started
+**Status**: ✅ Completed
 **Objective**: Implement the primary value proposition: Darshan timings and temple info.
 **Deliverables**:
 - Home Dashboard with Status Card.

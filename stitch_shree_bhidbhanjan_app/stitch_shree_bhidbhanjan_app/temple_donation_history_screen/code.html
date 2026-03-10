@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temple User Profile Screen</title>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4af25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen antialiased flex flex-col max-w-md mx-auto shadow-2xl overflow-x-hidden relative pb-20">
+<header class="relative w-full h-64 bg-slate-800 rounded-b-3xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Temple Banner" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzWGRy-GAmDKgKdgica0E8_GK4d-B5AR48lClzQD8UpAcvxf7crjC8zviNmEyw-N225XmgrGf1t8lqJ4pmMM3yL0UaqQal6bMKP5g6xBo3yHOVLQ3LZRGsi6ORan_lPRwh8zBG7luAZPTFExJLf8FF1-s1pgPnQ2n-Az5iYxgNHCme6dXX7MRKAtlt5hJvFrz-iSw7ZiLzf0g856qqUrpSN8l7nMtTuF7sRzF980LIt6YbE-iL5TSc15LtBPDAGgRWbhbhhNb6SBs"/>
+<button class="absolute top-4 left-4 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/20 hover:bg-black/40 text-white backdrop-blur-sm transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="absolute inset-0 z-20 flex flex-col items-center justify-center pt-8">
+<div class="relative">
+<div class="w-24 h-24 rounded-full border-4 border-white dark:border-slate-800 overflow-hidden shadow-xl bg-slate-200">
+<img alt="Aryan Sharma" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_D_3VtgVUg3Wq3GRLLfMEnESy9Yj_jHfaOxjKuV7otPqMSvUnfg3JQg7tguVymlFgIDDOdtOhMWZOJ9wPPzJc2nrytzsYfySXgKmtgNRp7Fs189gj3HBa0wCgA9mFFkP03tzqJXDrvpSjQDm0CT7AsXwVIfjYga5X01ghaP7C-mzjVwh3r7Fdb1Ze_su4Ix-H5KeWC3mRIXHFVF7U8HeYAn9DlTICXQ-Li44VMWT_ktCnP7XtiukSSjvV1OEnGnfxvSBU-dQ8aU"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary w-8 h-8 rounded-full flex items-center justify-center shadow-md border-2 border-white dark:border-slate-800 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-background-dark font-bold">edit</span>
+</button>
+</div>
+<h1 class="text-2xl font-bold text-white mt-3 shadow-sm">Aryan Sharma</h1>
+<p class="text-sm text-slate-200 font-medium">aryan.sharma@example.com</p>
+</div>
+</header>
+<main class="flex-1 flex flex-col gap-6 p-4 -mt-4 relative z-30">
+<section>
+<h2 class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3 px-1">Spiritual Journey</h2>
+<div class="bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-sm border border-primary/10">
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+</div>
+<div>
+<span class="block text-xl font-bold text-slate-900 dark:text-white leading-tight">15</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Visits</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-2 relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-px h-12 bg-slate-200 dark:bg-slate-700"></div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-slate-200 dark:bg-slate-700"></div>
+<div class="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">event_available</span>
+</div>
+<div>
+<span class="block text-xl font-bold text-slate-900 dark:text-white leading-tight">4</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Events</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<div>
+<span class="block text-xl font-bold text-slate-900 dark:text-white leading-tight">24</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Saved</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="flex justify-between items-center mb-3 px-1">
+<h2 class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Personal Details</h2>
+<button class="text-sm font-bold text-primary hover:text-primary/80 transition-colors">Edit</button>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="flex-1">
+<p class="text-xs text-slate-500 dark:text-slate-400">Full Name</p>
+<p class="text-sm font-semibold text-slate-900 dark:text-white">Aryan Sharma</p>
+</div>
+</div>
+<div class="w-full h-px bg-slate-100 dark:bg-slate-700"></div>
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</div>
+<div class="flex-1">
+<p class="text-xs text-slate-500 dark:text-slate-400">Phone Number</p>
+<p class="text-sm font-semibold text-slate-900 dark:text-white">+91 98765 43210</p>
+</div>
+</div>
+<div class="w-full h-px bg-slate-100 dark:bg-slate-700"></div>
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</div>
+<div class="flex-1">
+<p class="text-xs text-slate-500 dark:text-slate-400">Email Address</p>
+<p class="text-sm font-semibold text-slate-900 dark:text-white">aryan.sharma@example.com</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3 px-1">Settings &amp; Actions</h2>
+<div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-primary/10 overflow-hidden flex flex-col">
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors border-b border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/15 text-primary">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<span class="font-semibold text-slate-800 dark:text-slate-200">Change Password</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors border-b border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/15 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<span class="font-semibold text-slate-800 dark:text-slate-200">Notification Settings</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors border-b border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/15 text-primary">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<span class="font-semibold text-slate-800 dark:text-slate-200">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 text-red-500">
+<span class="material-symbols-outlined">logout</span>
+</div>
+<span class="font-semibold text-red-500">Logout</span>
+</div>
+<span class="material-symbols-outlined text-red-400 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 w-full max-w-md mx-auto bg-white dark:bg-slate-900 border-t border-primary/20 flex gap-2 px-4 pb-6 pt-3 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-20">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Donate</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">history</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">History</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px] font-bold" style="font-variation-settings: 'FILL' 1;">person</span>
+</div>
+<p class="text-xs font-bold leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</nav>
+</body></html>

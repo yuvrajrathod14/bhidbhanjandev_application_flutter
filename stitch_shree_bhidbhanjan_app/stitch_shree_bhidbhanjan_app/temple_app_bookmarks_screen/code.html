@@ -1,0 +1,183 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temple App Bookmarks Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4af25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-filled {
+            font-family: 'Material Symbols Outlined';
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<!-- App Bar -->
+<div class="sticky top-0 z-20 flex items-center bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 justify-between border-b border-primary/10">
+<div class="text-primary flex size-10 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight flex-1 text-center font-display">Bookmarks</h2>
+<div class="flex w-10 items-center justify-end cursor-pointer">
+<p class="text-primary text-base font-semibold leading-normal">Edit</p>
+</div>
+</div>
+<!-- Sticky Category Tabs -->
+<div class="sticky top-[72px] z-10 bg-background-light dark:bg-background-dark">
+<div class="flex overflow-x-auto no-scrollbar border-b border-primary/10 px-4 gap-6">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-slate-900 dark:text-slate-100 pb-3 pt-4 shrink-0" href="#">
+<p class="text-sm font-bold tracking-wide">Events</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-400 dark:text-slate-500 pb-3 pt-4 shrink-0" href="#">
+<p class="text-sm font-bold tracking-wide">Blog Posts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-400 dark:text-slate-500 pb-3 pt-4 shrink-0" href="#">
+<p class="text-sm font-bold tracking-wide">Gallery</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-400 dark:text-slate-500 pb-3 pt-4 shrink-0" href="#">
+<p class="text-sm font-bold tracking-wide">Timings</p>
+</a>
+</div>
+</div>
+<!-- Scrollable Content Area -->
+<div class="flex-1 overflow-y-auto pb-24">
+<div class="px-4 pt-6 pb-2">
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold font-display">Saved Events (3)</h3>
+<p class="text-slate-500 text-xs font-medium uppercase tracking-widest mt-1">Swipe left to remove</p>
+</div>
+<!-- Event Card 1 -->
+<div class="p-4">
+<div class="relative flex flex-col gap-0 rounded-xl bg-white dark:bg-slate-900/40 shadow-sm border border-primary/5 overflow-hidden">
+<div class="absolute top-3 right-3 z-10 bg-white/80 dark:bg-black/40 backdrop-blur-md rounded-full p-1.5 shadow-sm">
+<span class="material-symbols-outlined material-symbols-filled text-primary text-xl">bookmark</span>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-[16/7] bg-cover" data-alt="Traditional Hindu temple during evening prayers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAm1ft0aTXabWWJgDR9Oj_ljPkvdQC2wxSbFPnSBK4ybtbQzglvMY2qp44i8fQvuDTtRgLSXHRHFRYwr1KgYG2ExRk_X-QNIFFCidh70TqRN04w_oJ8FPywtYBkE5KeAjcPypusH96FFNgluPsfFoYDOEn9v80IDWR4aZOaEDcC3w6IJrJOs5miSrN8qokBZoZ804jASZqOZt-1BuTSi9qNkhEpKgJj-tt3egYrYzouZVztl030hlcxfvxfBwG4SVR9V-sN3VVDb8Y");'></div>
+<div class="p-4 flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-0.5">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest">Grand Temple Hall</span>
+<p class="text-slate-900 dark:text-slate-100 text-lg font-bold font-display leading-tight">Maha Shivaratri Celebration</p>
+</div>
+</div>
+<div class="flex items-center gap-4 mt-1">
+<div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<p class="text-xs font-medium">March 8, 2024</p>
+</div>
+<div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<p class="text-xs font-medium">6:00 PM onwards</p>
+</div>
+</div>
+<div class="flex gap-2 mt-3">
+<button class="flex-1 bg-primary text-white py-2.5 rounded-lg text-sm font-bold shadow-md shadow-primary/20">Book Now</button>
+<button class="px-4 py-2.5 rounded-lg border border-primary/20 text-primary text-sm font-bold">Details</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="px-4 pb-4">
+<div class="relative flex flex-col gap-0 rounded-xl bg-white dark:bg-slate-900/40 shadow-sm border border-primary/5 overflow-hidden">
+<div class="absolute top-3 right-3 z-10 bg-white/80 dark:bg-black/40 backdrop-blur-md rounded-full p-1.5 shadow-sm">
+<span class="material-symbols-outlined material-symbols-filled text-primary text-xl">bookmark</span>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-[16/7] bg-cover" data-alt="Vibrant Holi festival colors and celebration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACQyXD3miKHheKVf2yOdm8_kHmEDYg2ezApeb8Wt09sMdFC72-PZQVXmJMUlqywp1C6Zqsm-9NFZKlgWBt6IgrtNES6obPHEizL542igAyO1gYO888PKkbI5dzkVjpwdnf3iaAjC3frAql2cyHEyvYsmZm0W45UuXQ32zqv2tGjuOAm0OYx_7EU6FAvZR7ShaoSjpAkZ_F6xoYORab2YRiu9nXnf66PDN9SfQLQ30YciNmMREq-egnWEBXTnyPmCQ5TgYNHrAG1KM");'></div>
+<div class="p-4 flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-0.5">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest">Temple Courtyard</span>
+<p class="text-slate-900 dark:text-slate-100 text-lg font-bold font-display leading-tight">Holi Utsav &amp; Bhajan Sandhya</p>
+</div>
+</div>
+<div class="flex items-center gap-4 mt-1">
+<div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<p class="text-xs font-medium">March 25, 2024</p>
+</div>
+<div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<p class="text-xs font-medium">4:30 PM</p>
+</div>
+</div>
+<div class="flex gap-2 mt-3">
+<button class="flex-1 bg-primary text-white py-2.5 rounded-lg text-sm font-bold shadow-md shadow-primary/20">Book Now</button>
+<button class="px-4 py-2.5 rounded-lg border border-primary/20 text-primary text-sm font-bold">Details</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 3 (Simplified/Horizontal Variant) -->
+<div class="px-4 pb-4">
+<div class="relative flex items-center gap-4 rounded-xl bg-white dark:bg-slate-900/40 p-3 shadow-sm border border-primary/5 overflow-hidden">
+<div class="w-24 h-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="Temple architecture details with golden light" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaVBQHtlU_dQLUfslmNZpy7nOqD8JFFU-3EXD-NP-LKZdZb-RfADXrPV2EEL88XPtZ5B0-ETvtNBOPv0zlnKdvZ4zX3O09JkNnpavGelokv0W-M2Dhc3JEPELmhSTGBbWAyTkCXI_4aET_yU4uSp9gtL5o8dVJc5T-We1JQxBUpnVTeXk9o2th75JesgAdtspTj3vV7lEfl3jqJ-wEXUdNlqFEarOCtQXoAoSycOddPDOVfyF6LZ7-nRGznI9ackw-Toan3AGH4m8");'></div>
+<div class="flex flex-col gap-1 flex-1 pr-8">
+<span class="text-primary text-[9px] font-bold uppercase tracking-widest">Main Shrine</span>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold font-display leading-tight">Annual Varshikotsavam</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> April 12, 2024
+                        </p>
+</div>
+<div class="absolute top-3 right-3">
+<span class="material-symbols-outlined material-symbols-filled text-primary text-xl">bookmark</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-30 flex gap-2 border-t border-primary/10 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-4 pb-6 pt-3">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">handshake</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Pooja</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">event</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Events</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined material-symbols-filled">bookmark</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Saved</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Profile</p>
+</a>
+</div>
+</div>
+</body></html>

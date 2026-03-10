@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temple App Splash Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#f5993d",
+          "background-light": "#f8f7f5",
+          "background-dark": "#221910",
+        },
+        fontFamily: {
+          "display": ["Newsreader", "serif"]
+        },
+        borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-screen w-full flex-col bg-gradient-to-br from-primary via-[#e68a30] to-[#c26d1d] group/design-root overflow-hidden items-center justify-between py-20">
+<!-- Subtle Texture Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay" data-alt="Subtle aged paper texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoOcc15z902RrGqkYwZePoIEgujraTMzO0f-zo8y5q3CAlfXZI02sRAuX-CPa4-MjxwxTVAJyyCjtNAehfTUI54bPhx34q7ufMh44YCB1QyTuly0BGGNbbGnbbA989Xq4RNehvM_l63SzM_yWOLlLcbCE1ltqnw6zRB9S87Dnzolv0yyDrwclbWf1xZqe7E4CS8RtTjl1x6yF-U--RUJGcKtIAi-KQJXM7UoUyJxyW9SLg0tVgiYOARya9txenJSSvdJE1fPAlz28"); background-size: cover;'></div>
+<!-- Top Spacing -->
+<div class="h-10"></div>
+<!-- Center Content: Logo and Title -->
+<div class="flex flex-col items-center gap-8 relative z-10 w-full px-6">
+<!-- Divine Glowing Logo Container -->
+<div class="relative flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md p-8 shadow-[0_0_80px_rgba(255,255,255,0.3)] border border-white/20">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" data-alt="Glowing Om symbol" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvGy0oFKf8DdrRA94Lxji19Sru2t6VvISDby8KRQPhlIZ2Ye6eDYL42JcHpwzUoSgUs_aLI8r4VIyI0TUrKhndDzylZjk7vKN7uSu9U2LzzoaSkvgiiWlX7HX_SgH-wrFr2HVJ-prjekpb1VCrF_jIq13eeAKmuBSGelpz1ht0_XuByHhkxQQSyimJDIJMNLAG6T11_ANNpljN8O2ncZc-k4SAJEo8-juI2n0gFiudhgOf0uoSqodm94upWJ1ayIyKoeEoaLdSBYs");'></div>
+</div>
+<!-- Temple Name -->
+<div class="flex flex-col items-center gap-2">
+<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-wide text-center drop-shadow-md">Shree Mandir</h1>
+<div class="h-[2px] w-24 bg-gradient-to-r from-transparent via-white/80 to-transparent mt-2"></div>
+</div>
+</div>
+<!-- Bottom Content: Tagline and Loading Indicator -->
+<div class="flex flex-col items-center w-full px-8 pb-10 relative z-10 gap-8">
+<!-- Inspirational Quote -->
+<p class="text-white/90 text-lg md:text-xl font-medium leading-relaxed text-center italic tracking-wide">
+      "Find peace and schedule your spiritual journey."
+    </p>
+<!-- Loading Indicator (Progress Bar Style from Components) -->
+<div class="flex w-full max-w-xs flex-col gap-2">
+<div class="rounded-full bg-black/20 overflow-hidden h-2 shadow-inner border border-white/10">
+<div class="h-full rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" style="width: 45%;"></div>
+</div>
+<p class="text-white/70 text-sm text-center font-medium uppercase tracking-widest mt-2 text-[10px]">Loading divine experience...</p>
+</div>
+</div>
+</div>
+</body></html>

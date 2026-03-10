@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temple Updates &amp; Announcements List</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4af25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-md mx-auto bg-background-light dark:bg-background-dark shadow-2xl">
+<!-- App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 z-10 bg-background-light dark:bg-background-dark shadow-sm">
+<button aria-label="Go back" class="flex size-12 shrink-0 items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Updates &amp; Announcements</h2>
+<div class="flex w-12 items-center justify-end">
+<button aria-label="Search" class="flex size-12 cursor-pointer items-center justify-center rounded-lg bg-transparent text-primary">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+</div>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 p-4 overflow-x-auto hide-scrollbar scroll-smooth">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-5 pr-5 shadow-sm">
+<p class="text-white text-sm font-semibold leading-normal">All</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/10 dark:bg-primary/20 pl-5 pr-5">
+<p class="text-primary text-sm font-medium leading-normal">Announcements</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/10 dark:bg-primary/20 pl-5 pr-5">
+<p class="text-primary text-sm font-medium leading-normal">Articles</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/10 dark:bg-primary/20 pl-5 pr-5">
+<p class="text-primary text-sm font-medium leading-normal">Notices</p>
+</button>
+</div>
+<!-- Main Content -->
+<div class="flex-1 overflow-y-auto px-4 pb-6 space-y-4">
+<!-- Pinned Post -->
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-md bg-white dark:bg-slate-800 border border-primary/20">
+<div class="relative w-full aspect-video bg-center bg-no-repeat bg-cover" data-alt="Golden statue of a deity during festival" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjP7qmajYI3SB4qUQJuJ9_4A8uYNIfmMXVjoGUGZbi4Ma_PvJp-A8Y-277mI-aFAyspkP0k_O9Mf5L83Gw8kXenumUfJvFxsmaTktuC9oS5n22_lTcb32FKhVNOTVdmu9xbm3uGnFJtemXYDAeo4MaI1-eIBh8sdIyspAjaBX25VgZtGcq1BVwj27WLS1P4r32MqIt2hvRXAC1xCLWu4dkADoUjAUfWJYmH0yqgnPCidBHgtZjV9ZEO_jJvttdHkRut8k9NYXoVsU');">
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm px-2.5 py-1 rounded flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary">push_pin</span>
+<span class="text-xs font-bold text-primary uppercase tracking-wider">Pinned</span>
+</div>
+</div>
+<div class="flex w-full flex-col items-stretch justify-center gap-2 p-4 bg-primary/5 dark:bg-primary/10">
+<h3 class="text-lg font-bold leading-tight line-clamp-2">Maha Shivaratri Celebrations 2024: A Night of Devotion</h3>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-2">
+                        Join us for a night of devotion, bhajans, and special pujas honoring Lord Shiva. Find the full schedule of events and volunteering opportunities here.
+                    </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-primary/10">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium">Feb 28 · Temple Committee</p>
+<button class="text-primary text-sm font-semibold flex items-center hover:underline">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Posts List -->
+<div class="flex flex-col gap-4 pt-2">
+<!-- Post Item 1 -->
+<div class="flex gap-4 bg-white dark:bg-slate-800 rounded-xl p-3 shadow-sm border border-slate-100 dark:border-slate-700 relative overflow-hidden group">
+<div class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[84px] w-[120px] shrink-0" data-alt="People sitting in prayer room" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjgUqM2rRb5hrX4SL0oYIHG7ha0sJuQWxaM5uLcVjbJ13oNso1sisWVzola6qVbHPWLZKrNrlhnafUgzlrpAoJt5xS-yT4-vEgkm3yfBXoWJyE0h-3T2E1F_eK0UhkSwYAbD-8e7id2ihpYZHTnVbv6ucGNCYdpgL-yYp0ffofUyqOxbmPkUxXbCLbZkOFIlaaWXk09fS5u8xNOlMX-T1SojGig7kjoycn5pa4ztAW38YibwFV2coAA4dtvozoS3BGdhBjYkmcMxc');"></div>
+<div class="flex flex-1 flex-col justify-between py-0.5 min-w-0">
+<div>
+<h4 class="text-base font-bold leading-tight mb-1 line-clamp-2 text-slate-800 dark:text-slate-100">Weekly Satsang Schedule Updated for Summer</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">The timing for our regular Sunday Satsang has changed.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<p class="text-slate-400 dark:text-slate-500 text-[11px] font-medium uppercase tracking-wider">Mar 15 · 2 min read</p>
+<span class="material-symbols-outlined text-primary text-lg opacity-80 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Post Item 2 -->
+<div class="flex gap-4 bg-white dark:bg-slate-800 rounded-xl p-3 shadow-sm border border-slate-100 dark:border-slate-700 relative overflow-hidden group">
+<div class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[84px] w-[120px] shrink-0" data-alt="Colorful floral decorations for festival" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzn0VYPtaiG1XySu3AN8eiFfuFfsVc4B96JVyNrbLifIkx11pHRDIaLo_u9_1puE9GrmnfizMHgvp9sJNtEeR1ycsZ7KDiU0SAxUGrApptpOtpK7hOW9rkIeq0A6IDyNRMvnSYD-P2pj5Chf4gYdM6NoXV-Jr9vkxi4oZ6xAH1ikZJznnjvt2FQndFP4NeKAW9UL0xx8Bm2f4RQOgvtKG8WUPF5JLPTtchvMmUzfivUlSIZlGBtAhlBvrnBcOndwSloskLcYFCfUk');"></div>
+<div class="flex flex-1 flex-col justify-between py-0.5 min-w-0">
+<div>
+<h4 class="text-base font-bold leading-tight mb-1 line-clamp-2 text-slate-800 dark:text-slate-100">Volunteer Sign-up Open for Navratri Festival</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">We are looking for dedicated volunteers for nine nights.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<p class="text-slate-400 dark:text-slate-500 text-[11px] font-medium uppercase tracking-wider">Mar 10 · 3 min read</p>
+<span class="material-symbols-outlined text-primary text-lg opacity-80 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Post Item 3 -->
+<div class="flex gap-4 bg-white dark:bg-slate-800 rounded-xl p-3 shadow-sm border border-slate-100 dark:border-slate-700 relative overflow-hidden group">
+<div class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[84px] w-[120px] shrink-0" data-alt="Temple priest performing arti" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUFIBX0ZImnEL02vZOLvhG1TgHrkOTkg6kpXyJ__v_oKnDPQdQJ2d0aXyacsPZj_wbXUWcfo5K_nD-oFuieHYv17n1-rCmqsxJufXnSLQhTWUJQrUN2hn8MX2sezBYZIyXe1_WXTbkIukMM94_dF_NxZf7GZ8pmQ00_P4feFRz7-HtLwmLQqzktrrtfTMt5TR_xkcg6K-exex2EFJ-PhoN28OmELCBvTP9WyB4wk9zcYfhGXtg0n9ST0mcMUJY02PLcds2Kr_PD64');"></div>
+<div class="flex flex-1 flex-col justify-between py-0.5 min-w-0">
+<div>
+<h4 class="text-base font-bold leading-tight mb-1 line-clamp-2 text-slate-800 dark:text-slate-100">New Guidelines for Prasad Distribution</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">Please note the updated timings and process for receiving prasad.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<p class="text-slate-400 dark:text-slate-500 text-[11px] font-medium uppercase tracking-wider">Mar 05 · 1 min read</p>
+<span class="material-symbols-outlined text-primary text-lg opacity-80 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<div class="h-8"></div>
+</div>
+</div>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>
